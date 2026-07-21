@@ -170,5 +170,172 @@ let array3 = [...array1, ...array2]
 console.log(array3);
 
 
+let a = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+console.log(a);
+
+
+let z = a.splice(1, 3, 1001)
+
+console.log(a);
+console.log(z);
+
+
+//objects
+
+
+const { name,age,email,courses,personal:{color,gadget}} = {
+    name: "harish",
+    age: 22,
+    email: "abc@gmail.com",
+    courses: [0, 1, 23, 14],
+    personal: {
+        color: "black",
+        gadget:"headphone"
+    }
+}
+
+console.log(name,age,email,courses,color,gadget);
+
+console.log(user["name"]);
+console.log(user.email);
+
+
+user.department = "ece"
+
+console.log(user);
+
+delete user["age"]
+
+console.log(user.personal.gadget);
+console.log(user.courses);
+
+
+
+//loops
+
+for (let z = 1; z <= 100; z++){
+
+
+    console.log(z);
+    
+
+}
+
+// for with array
+
+let array = [10, 20, 30]
+
+for (let k of array) {
+    console.log(k);
+    
+}
+
+// for with objects 
+const user = {
+    name: "harish",
+    age: 22,
+    email: "abc@gmail.com",
+    courses: [0, 1, 23, 14],
+    personal: {
+        color: "black",
+        gadget: "headphone"
+    }
+}
+
+for (let keys in user) {
+    console.log(user[keys]);
+    
+}
+
+
+// while
+
+let a = 1;
+
+while (  a <=5) {
+    console.log(a);
+    a++
+}
+
+
+//functions
+
+function printHello( num = 100 ) {
+        console.log(num);
+        
+    return true;
+
+
+}
+
+let a = printHello()
+ console.log(a);
+ 
+let z = printHello(10)
+console.log(z);
+
+console.log(printHello());
+
+
+
+// arrow functions
+
+const abc = (a,...b) => {
+    console.log(a);
+    console.log(b);
+    
+   
+   
+   
+}
+console.log(abc(10, 20, 30, 40, 50));
+
+
+// template literals
+
+let name = "harish"
+let age = 22
+
+console.log(`hello my name is ${name} and my age is ${age}`);
+
+// pass by value
+let a = 10 
+let b = a
+a = 20;
+
+console.log(a);
+console.log(b);
+
+// pass by reference
+let arr1 = [1, 2, 3]
+
+let arr2 = arr1
+
+arr2.push(20)
+
+console.log(arr1);
+console.log(arr2);
+
+// const variable can be mutate
+const a = 10
+a = 20
+
+const arr = [1, 2, 3, 4]
+
+arr = [1,2,3,45]
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
