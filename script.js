@@ -218,7 +218,7 @@ for (let z = 1; z <= 100; z++){
 
 
     console.log(z);
-    
+
 
 }
 
@@ -228,10 +228,10 @@ let array = [10, 20, 30]
 
 for (let k of array) {
     console.log(k);
-    
+
 }
 
-// for with objects 
+// for with objects
 const user = {
     name: "harish",
     age: 22,
@@ -245,7 +245,7 @@ const user = {
 
 for (let keys in user) {
     console.log(user[keys]);
-    
+
 }
 
 
@@ -263,7 +263,7 @@ while (  a <=5) {
 
 function printHello( num = 100 ) {
         console.log(num);
-        
+
     return true;
 
 
@@ -271,7 +271,7 @@ function printHello( num = 100 ) {
 
 let a = printHello()
  console.log(a);
- 
+
 let z = printHello(10)
 console.log(z);
 
@@ -284,10 +284,10 @@ console.log(printHello());
 const abc = (a,...b) => {
     console.log(a);
     console.log(b);
-    
-   
-   
-   
+
+
+
+
 }
 console.log(abc(10, 20, 30, 40, 50));
 
@@ -300,7 +300,7 @@ let age = 22
 console.log(`hello my name is ${name} and my age is ${age}`);
 
 // pass by value
-let a = 10 
+let a = 10
 let b = a
 a = 20;
 
@@ -332,10 +332,45 @@ arr = [1,2,3,45]
 
 
 
+//map method
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+a.map((harish) => console.log(harish));
+
+
+//filter
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const b = a.filter((harish) => harish % 2 == 0);
+console.log(b);
+
+
+// reduce
+
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+const z = a.reduce( (b, c ) =>   b + c, 10 )
+
+console.log(z);
+
+
+// function scope
 
 
 
+// hoisting
 
+
+function abc() {
+
+    console.log(b);
+    var b = 300
+console.log(b);
+
+
+}
+
+abc()
 
 
 
